@@ -1,0 +1,18 @@
+
+app:
+  name: home
+  image:
+    name: nginx
+    tag: 1.20
+    containerPort: 80
+  replicas: 1
+  request:
+    cpu: "150m"
+    memory: "100Mi"
+  limits:
+    cpu: "200m"
+    memory: "200Mi"
+  ServicePort: 80
+
+
+
